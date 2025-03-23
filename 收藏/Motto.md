@@ -1,0 +1,3 @@
+- Don't generalize, generalize is generally wrong.
+- Prototypes are easy, production is hard.
+- 计算机的世界里没有魔法, everything is state machine
