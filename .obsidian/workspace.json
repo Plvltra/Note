@@ -4,12 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "d135ff543a9314e7",
+        "id": "4c4523d31e5ca29b",
         "type": "tabs",
         "children": [
           {
-            "id": "4749221d6cd85d93",
+            "id": "8fab8ee8a9492742",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -17,6 +18,7 @@
                 "mode": "source",
                 "source": true
               },
+              "pinned": true,
               "icon": "lucide-file",
               "title": "Network"
             }
@@ -24,11 +26,11 @@
         ]
       },
       {
-        "id": "8d832745b5364f7c",
+        "id": "09b9f3203426ae17",
         "type": "tabs",
         "children": [
           {
-            "id": "20ad2ac628badd9e",
+            "id": "2f4b9d380713b7cd",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -174,8 +176,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,55 +188,54 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4749221d6cd85d93",
+  "active": "2f4b9d380713b7cd",
   "lastOpenFiles": [
-    "Computer Science/OS.md",
+    "Repo/network/OutputQueuedPacketSwitch.png",
     "Computer Science/Network.md",
-    "Computer Science/Make.md",
-    "Computer Science/VSCode.md",
-    "Computer Science/Linux.md",
-    "Computer Science/Git.md",
-    "Computer Science/Shell.md",
-    "Pasted image 20250306182750.png",
-    "Pasted image 20250306181552.png",
-    "RAID.png",
-    "Pasted image 20250116103036.png",
+    "Repo/network/IntputQueuedPacketSwitch.png",
+    "Repo/network/GenericPacketSwitch.png",
+    "Repo/network/SimpleQueueModel.png",
+    "Repo/network/PlaybackBuffers.png",
+    "Computer Science/OS.md",
+    "Repo/why note.png",
+    "Repo/network/191eb28a-5714-4d1e-86a9-392a44192daa.png",
+    "Repo/why note 1.png",
+    "Repo/network",
+    "Other/健身.md",
+    "Unreal/PCG Framework.md",
     "01D4C649.png",
     "01D4D741.png",
-    "Unreal/PCG Framework.md",
-    "Other/健身.md",
-    "Computer Science/Misc/FAT格式.md",
-    "收藏/Misc/程序沙龙（广州，直播）第460期——Pangu-基于UE的场景PCG工具.pdf",
-    "收藏/Misc/TODO.md",
-    "收藏/Programming Guidance.md",
+    "Unreal/SceneCapture2D与Viewport渲染.md",
+    "Repo/Untitled.md",
+    "Repo/OS",
+    "Repo/健身/lesson3.jpg.crdownload",
+    "Computer Science/Unreal.md",
+    "Computer Science/C++.md",
+    "Repo/健身/lesson2.jpg.crdownload",
     "收藏/Motto.md",
     "收藏/收藏.md",
-    "RAID0.png",
-    "Pasted image 20250306182731.png",
-    "Computer Science/Unreal.md",
+    "Computer Science/Vim.md",
+    "收藏/Misc/TODO.md",
+    "Repo/健身/lesson1.jpg.crdownload",
+    "Repo/健身",
+    "Other/健身.md~",
+    "收藏/Misc/程序沙龙（广州，直播）第460期——Pangu-基于UE的场景PCG工具.pdf",
+    "Computer Science/VSCode.md",
+    "Computer Science/CMake.md",
+    "Computer Science/Git.md",
+    "Computer Science/Linux.md",
+    "Computer Science/Shell.md",
+    "Computer Science/Misc/FAT格式.md",
+    "收藏/Programming Guidance.md",
     "Computer Science/GDB.md",
     "Computer Science/GCC.md",
     "Computer Science/Haskell.md",
-    "Computer Science/Cpp.md",
     "收藏/Good.md",
     "Computer Science/Misc",
     "Other/OS临时笔记.md",
     "Other/Obsedian使用技巧.md",
-    "Computer Science/Python.md",
-    "Unreal/SceneCapture2D与Viewport渲染.md",
-    "Computer Science/汇编.md",
-    "Repo/gpt2 parameter.png",
-    "Repo/original gpt model.png",
-    "Other/文档技巧.md",
     "Unreal",
     "Untitled.canvas",
-    "Repo",
-    "Temp",
-    "收藏",
-    "Program/Git/Untitled.canvas",
-    "Other",
-    "Program/Git",
-    "Program/git",
-    "Program/新建文件夹"
+    "Program/Git/Untitled.canvas"
   ]
 }

@@ -216,6 +216,14 @@ private:
     std::atomic<Node*> head;
 };
 ```
+- C++ exception(实际throw执行的是不返回的call, 并且中间插入执行landing pad析构对象)
+	- 第一步：先调用函数\_\_cxa_allocate_exception申请一片内存，内存上面的数据有两部分组成：第一部分是struct \_\_cxa_refcounted_exception, 第二部分是代码抛出的对象
+	- 第二步：再调用__cxa_throw函数, \_\_cxa_throw函数里面主要是调用\_Unwind_RaiseException函数，在正常情况下\_Unwind_RaiseException函数是不返回的。\_Unwind_RaiseException函数主要分为两个阶段（phase）
+		- 第一阶段：进行stack unwind，如果在整个unwind的过程中找不到对应的exception handler，\_Unwind_RaiseException将会返回，\_\_cxa_throw会调用std::terminate函数；如果在unwind的过程中找到对应的exception handler了，将会跳转到阶段二。
+		- 第二阶段：调用_Unwind_RaiseException_Phase2函数，从头再做一次stack unwind，这次unwind的策略和第一阶段不一样，这次unwind找到第一个landing pad后，就将执行权交给landing pad来执行。landing pad又分两种情况:  
+			- 第一种情况：它并不是最终的exception handler，而是中间函数的landing pad, 主要做的事情就是将一些函数内的局部变量进行析构，所有的局部变量处理完后，将会调用_Unwind_Resume函数，\_Unwind_Resume函数会在内部重新调用\_Unwind_RaiseException_Phase2函数，此函数会继续向下做stack unwind，找到下一个landing pad。
+			- 第二种情况：它是最终的exception handler，会调用__cxa_begin_catch来处理异常和对异常实例进行销毁/析构。
+
 ### 调试技巧
 - log: 使用RAII打印进出函数
 	```cpp
@@ -232,6 +240,10 @@ private:
         printf("This is f.\n");
         TRACE_EXIT;	
 	```
+
+### 工具
+- clang-format: 代码格式化工具
+- clang-tidy: 静态检查工具
 
 ## C语言
 - \_\_sync_lock_release: 让C Compiler不会将load和store指令穿过这一行

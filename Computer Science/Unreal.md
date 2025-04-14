@@ -7,7 +7,7 @@
 	https://zhuanlan.zhihu.com/p/477803528
 - Unreal GC: https://www.cnblogs.com/kekec/p/13045042.html
 - UE5标识符详解: https://github.com/fjz13/UnrealSpecifiers
-- UE反射机制: https://zhuanlan.zhihu.com/p/60622181
+- UE反射机制: 
 	- 反射C++代码.generated.h .gen.cpp 是由Unreal Build Tool和Unreal Header Tool产生。
 		- UBT通过扫描头文件，记录所有包含反射类型的modules，当其中有头文件改变时，就会用UHT更新反射数据
 		- UHT解析头文件，扫描标记，生成用于支持反射的C++代码
@@ -27,7 +27,28 @@
 		- 这些类由StaticClass, 有元信息，没有GeneratedBody展开和运行时注册UFunction逻辑。减少注册UFunction的开销。同时在一个文件里，UHT处理的更快
 		- https://github.com/fjz13/UnrealSpecifiers/blob/main/Doc/zh/Specifier/UCLASS/UHT/NoExport.md
 		- https://forums.unrealengine.com/t/why-are-there-two-definitions-of-uobject/511459/2
+	- 参考链接: https://zhuanlan.zhihu.com/p/60622181 https://www.cnblogs.com/ghl_carmack/p/5698438.html
 
+- UE多线程:
+	- 参考链接
+		- [《Exploring in UE4》多线程机制详解](https://zhuanlan.zhihu.com/p/38881269)  
+		-  [多线程渲染](https://www.cnblogs.com/timlly/p/14327537.html)
+		- unrealcommunity
+			- [Multithreading With FRunnable](https://unrealcommunity.wiki/multithreading-with-frunnable-2a4xuf68)
+			- [Multi-Threading: How to Create Threads in UE4](https://unrealcommunity.wiki/multi-threading:-how-to-create-threads-in-ue4-0bsy2g96)
+			- [Using AsyncTasks](https://unrealcommunity.wiki/using-asynctasks-1jpclff4)
+			- [Multi-Threading: Task Graph System](https://unrealcommunity.wiki/multi-threading:-task-graph-system-pah8k101)
+- unreal 项目插件接入
+	- .target.cs: 定义的TargetRules事项目构建目标, 可以类比其他构建工具相当于生成一个exe?
+	- .build.cs: 定义ModuleRules, 相当于生成一个模块的dll？
+	- 接入二进制插件: 插件module的build.cs bUseCompile设置为true。插件需要包含二进制和.h头文件(还需要有intermediate下面的.generated.h, 如果其他插件需要调用该插件接口include头文件。否则生成工程时二进制插件不会自动生成generated.h, 会报文件缺失)
+	- 启用插件: 
+		- 在插件.uplugin中设置"EnabledByDefault" : true, 
+		- 或者在.uproject的Plugins里面添加		
+			{
+				"Name": "${PluginName}",
+				"Enabled": true
+			}
 
 #### 调试技巧
 - 调试内存踩踏: 使用Debug模式启动，在命令行Optional Argument里面加上 -StompMAlloc选项
