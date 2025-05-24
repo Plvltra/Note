@@ -1,0 +1,3 @@
+- Principle of Least Expressiveness(最小表达力原则): 只有当使用最简洁的方式（常量，查表）不能表达想法时，再去使用编程语言的图灵完备特性
+	- 例如文章中的格式与解码器示例: 使用table进行关联而不是表达力更强的if/else。 这种表现方式能更加直观，以便于我们很自然地去思考是程序逻辑的本质(关联是否会是单射、双射、满射等)
+	- https://webperso.info.ucl.ac.be/~pvr/PrincipleOfLeastExpressiveness.pdf

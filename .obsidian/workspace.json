@@ -4,43 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4c4523d31e5ca29b",
+        "id": "0dd42d02cb238480",
         "type": "tabs",
         "children": [
           {
-            "id": "8fab8ee8a9492742",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Computer Science/Network.md",
-                "mode": "source",
-                "source": true
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Network"
-            }
-          }
-        ]
-      },
-      {
-        "id": "09b9f3203426ae17",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "2f4b9d380713b7cd",
+            "id": "bab5f8538a68be2b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "Computer Science/Network.md",
-                "mode": "preview",
-                "source": true
+                "aFile": "Daily/2025-05/2025-05-09.md",
+                "bFile": "Daily/2025-05/2025-05-09.md",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "Network"
+              "icon": "diff",
+              "title": "Diff: 2025-05-09"
             }
           }
         ]
@@ -116,7 +94,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/VSCode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +103,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for VSCode"
+              "title": "Backlinks"
             }
           },
           {
@@ -135,12 +112,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/VSCode.md",
-                "linksCollapsed": true,
-                "unlinkedCollapsed": true
+                "linksCollapsed": false,
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from VSCode"
+              "title": "Outgoing links"
             }
           },
           {
@@ -150,7 +126,9 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": true,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "Tags"
@@ -162,21 +140,40 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Network.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Network"
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "3a18ffda6ebbc069",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "47a6f88731563685",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 469.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,57 +182,62 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-git:Open Git source control": false,
+      "media-extended:Open media": false,
+      "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "2f4b9d380713b7cd",
+  "active": "bab5f8538a68be2b",
   "lastOpenFiles": [
-    "Repo/network/OutputQueuedPacketSwitch.png",
-    "Computer Science/Network.md",
-    "Repo/network/IntputQueuedPacketSwitch.png",
-    "Repo/network/GenericPacketSwitch.png",
-    "Repo/network/SimpleQueueModel.png",
-    "Repo/network/PlaybackBuffers.png",
-    "Computer Science/OS.md",
-    "Repo/why note.png",
-    "Repo/network/191eb28a-5714-4d1e-86a9-392a44192daa.png",
-    "Repo/why note 1.png",
-    "Repo/network",
-    "Other/健身.md",
-    "Unreal/PCG Framework.md",
-    "01D4C649.png",
-    "01D4D741.png",
-    "Unreal/SceneCapture2D与Viewport渲染.md",
-    "Repo/Untitled.md",
-    "Repo/OS",
-    "Repo/健身/lesson3.jpg.crdownload",
-    "Computer Science/Unreal.md",
+    "读书笔记/黑客与画家.md",
+    "Pasted image 20250523124647.png",
+    "Computer Science/Unreal/Unreal.md",
+    "Computer Science/软件使用/Perforce.md",
+    "Computer Science/Unreal/现有系统/Dungeon.md",
+    "Computer Science/软件使用/Perforce",
+    "Computer Science/软件使用",
+    "Obsedian使用技巧.md",
+    "Computer Science/汇编.md",
     "Computer Science/C++.md",
-    "Repo/健身/lesson2.jpg.crdownload",
-    "收藏/Motto.md",
-    "收藏/收藏.md",
-    "Computer Science/Vim.md",
-    "收藏/Misc/TODO.md",
-    "Repo/健身/lesson1.jpg.crdownload",
-    "Repo/健身",
-    "Other/健身.md~",
-    "收藏/Misc/程序沙龙（广州，直播）第460期——Pangu-基于UE的场景PCG工具.pdf",
-    "Computer Science/VSCode.md",
-    "Computer Science/CMake.md",
-    "Computer Science/Git.md",
-    "Computer Science/Linux.md",
-    "Computer Science/Shell.md",
-    "Computer Science/Misc/FAT格式.md",
-    "收藏/Programming Guidance.md",
     "Computer Science/GDB.md",
-    "Computer Science/GCC.md",
-    "Computer Science/Haskell.md",
-    "收藏/Good.md",
-    "Computer Science/Misc",
-    "Other/OS临时笔记.md",
-    "Other/Obsedian使用技巧.md",
-    "Unreal",
+    "Computer Science/Network.md",
+    "Spawn Items.md",
+    "Computer Science/Unreal/现有系统/PCG Framework.md",
+    "Computer Science/Misc/NJU-OS临时笔记.md",
+    "读书笔记",
+    "2025-05-16.md",
+    "健身/健身.md",
+    "健身",
+    "Untitled.md",
+    "Computer Science/Unreal/现有系统/SceneCapture2D与Viewport渲染.md",
+    "Computer Science/Unreal/反射系统.md",
+    "Computer Science/Unreal/现有系统",
+    "Computer Science/Misc/收藏.md",
+    "Computer Science/Misc/编程常用缩写.md",
+    "Computer Science/Misc/gpt2阅读笔记.md",
+    "Computer Science/Misc/FAT格式.md",
+    "Other/Untitled.md",
+    "title.md",
+    "Computer Science/Misc/Programming Guidance.md",
+    "Misc/Motto.md",
+    "Pasted image 20250512150439.png",
+    "84f93f4aab9fbe49cfa2d9f4f4c501e4_MD5.jpeg",
+    "Pasted image 20250512145451.png",
+    "Pasted image 20250512145037.png",
+    "Daily/2025-05/Untitled",
+    "Daily/2025-05",
+    "Misc/程序沙龙（广州，直播）第460期——Pangu-基于UE的场景PCG工具.pdf",
+    "Daily",
+    "Repo/why note.png",
     "Untitled.canvas",
+    "Excalidraw",
+    "Repo/OS/Disk.png",
+    "Repo/健身/lesson1.jpg",
+    "Repo/健身/卷腹2.png",
+    "Repo/健身/卷腹1.png",
     "Program/Git/Untitled.canvas"
   ]
 }

@@ -9,7 +9,7 @@ https://jyywiki.cn/OS/2024/
 #### 第6-7章: 并发：互斥
 ###### 1. Peterson算法与atomic
 Peterson算法: 只假设load和store实现互斥 缺点: 理解太复杂
-atomic指令: 汇编指令前加lock或者Test-And-Set (TAS), Compare-And-Swap (CAS), COMPXCHG (Compare-And-Exchange)等指令实现原子操作
+atomic指令: 汇编指令前 加lock或者Test-And-Set (TAS), Compare-And-Swap (CAS), COMPXCHG (Compare-And-Exchange)等指令实现原子操作
 
 ###### 2. 操作系统内核中用的自旋锁实现
 实现并发自旋锁的主要原因: 操作系统存在中断，一旦中断处理程序也要用spin lock住的资源就会死锁

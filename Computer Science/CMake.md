@@ -79,7 +79,28 @@ cpack --config CPackSourceConfig.cmake
 CMAKE_CURRENT_SOURCE_DIR: 表示当前CmakeLists.txt所在的文件目录
 ```
 
+``` cmake
+# FIXTURE用例: FIXTURES_REQUIRED, FIXTURES_SETUP
+set(compile_name "compile with bug-checkers")
+add_test(NAME ${compile_name}
+  COMMAND "${CMAKE_COMMAND}" --build "${CMAKE_BINARY_DIR}" -t functionality_testing webget)
 
+set_property(TEST ${compile_name} PROPERTY TIMEOUT 0)
+set_tests_properties(${compile_name} PROPERTIES FIXTURES_SETUP compile) # 设置名称为compile的fixture, 用作检查编译
+
+macro (ttest name)
+  add_test(NAME ${name} COMMAND "${name}_sanitized")
+  set_property(TEST ${name} PROPERTY FIXTURES_REQUIRED compile) #所有test任务依赖于compile fixture的成功
+endmacro (ttest)
+
+ttest(byte_stream_basics)
+ttest(byte_stream_capacity)
+ttest(reassembler_single)
+ttest(reassembler_cap)
+ttest(wrapping_integers_cmp)
+ttest(wrapping_integers_wrap)
+
+```
 #### 资料
 - [官方Matering CMake系列](https://cmake.org/cmake/help/book/mastering-cmake/index.html)
 	- [tutorial](https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/index.html)

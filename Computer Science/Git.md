@@ -1,7 +1,7 @@
-## 主要用法
+## 常用工具
 
-- 使用git extensions作为windows的扩展
-
+- 使用git extensions在windows以界面的方式扩展
+- tig工具: git的文本模式界面
 
 ## 命令原理
 

@@ -88,6 +88,20 @@
 		        }
 		    ]
 		}
+
+		// launch.json使用sudo调试c/c++
+		{
+		    "miDebuggerPath": "${workspaceFolder}/gdb_root.sh"
+		}
+		// gdb_root.sh
+		#!/bin/bash
+		SELF_PATH=$(realpath -s "$0")
+		if [[ "$SUDO_ASKPASS" = "$SELF_PATH" ]]; then
+			zenity --password --title="$1"
+		else
+			exec env SUDO_ASKPASS="$SELF_PATH" sudo -A /usr/bin/gdb $@
+		fi
+
 		// launch.json调试python
 		{
 		    "version": "0.2.0",
