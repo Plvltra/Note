@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "0dd42d02cb238480",
+        "id": "311bda3008d304b0",
         "type": "tabs",
         "children": [
           {
-            "id": "bab5f8538a68be2b",
+            "id": "28080cd48867b2bf",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "Daily/2025-05/2025-05-09.md",
-                "bFile": "Daily/2025-05/2025-05-09.md",
-                "aRef": ""
+                "file": "Computer Science/Network/CS144.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "diff",
-              "title": "Diff: 2025-05-09"
+              "icon": "lucide-file",
+              "title": "CS144"
             }
           }
         ]
@@ -173,7 +173,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 469.5
+    "width": 382.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -190,10 +190,36 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "bab5f8538a68be2b",
+  "active": "28080cd48867b2bf",
   "lastOpenFiles": [
+    "Computer Science/Network/TUN TAP设备.md",
+    "Computer Science/Misc/好代码收藏.md",
+    "Computer Science/Network/CS144.md",
+    "Computer Science/Network/attachments/da9939a1c361a7643569307915a473a8_MD5.jpg",
+    "Computer Science/Network/attachments/6792a48eb33116b88d134f6701dde6cc_MD5.jpg",
+    "Computer Science/Network/attachments/0ced6018d5928a64a51ef85aeab16391_MD5.jpg",
+    "Computer Science/Network/attachments/d66a2c8d031da47ff96edde987812f86_MD5.jpg",
+    "Computer Science/Network/attachments/4257a3a2d76c42812253e26d8b90a0c5_MD5.jpg",
+    "Computer Science/Network/attachments/aad5750b9da626fbecbe0753c83d8022_MD5.jpg",
+    "Computer Science/Network/attachments/175d8e6ea50320f596d735ff1cf29036_MD5.jpg",
+    "Computer Science/Network/attachments",
+    "Repo/network/0ced6018d5928a64a51ef85aeab16391_MD5.jpg",
+    "Repo/network/4257a3a2d76c42812253e26d8b90a0c5_MD5.jpg",
+    "Repo/network/175d8e6ea50320f596d735ff1cf29036_MD5.jpg",
+    "Computer Science/C++.md",
+    "Computer Science/Network",
+    "Computer Science/Untitled.md",
+    "Misc/收藏.md",
+    "读书笔记/Land of Lisp.md",
     "读书笔记/黑客与画家.md",
-    "Pasted image 20250523124647.png",
+    "Misc/Quotes.md",
+    "Misc/启发性的文字.md",
+    "Computer Science/Lisp.md",
+    "Misc/程序沙龙（广州，直播）第460期——Pangu-基于UE的场景PCG工具.pdf",
+    "读过的书/黑客与画家（中文版）.pdf",
+    "读过的书/禅与摩托车维修艺术-罗伯特·M·波西格.pdf",
+    "Computer Science/OS.md",
+    "Computer Science/Lisp",
     "Computer Science/Unreal/Unreal.md",
     "Computer Science/软件使用/Perforce.md",
     "Computer Science/Unreal/现有系统/Dungeon.md",
@@ -201,9 +227,7 @@
     "Computer Science/软件使用",
     "Obsedian使用技巧.md",
     "Computer Science/汇编.md",
-    "Computer Science/C++.md",
     "Computer Science/GDB.md",
-    "Computer Science/Network.md",
     "Spawn Items.md",
     "Computer Science/Unreal/现有系统/PCG Framework.md",
     "Computer Science/Misc/NJU-OS临时笔记.md",
@@ -214,30 +238,7 @@
     "Untitled.md",
     "Computer Science/Unreal/现有系统/SceneCapture2D与Viewport渲染.md",
     "Computer Science/Unreal/反射系统.md",
-    "Computer Science/Unreal/现有系统",
-    "Computer Science/Misc/收藏.md",
-    "Computer Science/Misc/编程常用缩写.md",
-    "Computer Science/Misc/gpt2阅读笔记.md",
-    "Computer Science/Misc/FAT格式.md",
-    "Other/Untitled.md",
-    "title.md",
-    "Computer Science/Misc/Programming Guidance.md",
-    "Misc/Motto.md",
-    "Pasted image 20250512150439.png",
-    "84f93f4aab9fbe49cfa2d9f4f4c501e4_MD5.jpeg",
-    "Pasted image 20250512145451.png",
-    "Pasted image 20250512145037.png",
-    "Daily/2025-05/Untitled",
-    "Daily/2025-05",
-    "Misc/程序沙龙（广州，直播）第460期——Pangu-基于UE的场景PCG工具.pdf",
-    "Daily",
-    "Repo/why note.png",
     "Untitled.canvas",
-    "Excalidraw",
-    "Repo/OS/Disk.png",
-    "Repo/健身/lesson1.jpg",
-    "Repo/健身/卷腹2.png",
-    "Repo/健身/卷腹1.png",
     "Program/Git/Untitled.canvas"
   ]
 }

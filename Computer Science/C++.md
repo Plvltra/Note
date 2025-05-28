@@ -62,6 +62,24 @@ PropertyName == GET_MEMBER_NAME_CHECKED(UPanguSplineCenterPoint, Location)
 		shared_ptr<T> data;
 	};
 	```
+
+- Concept使用
+``` cpp
+template<class T>
+concept TCPDatagramAdapter = requires( T a, TCPMessage seg ) {
+  { a.write( seg ) } -> std::same_as<void>;
+  { a.read() } -> std::same_as<std::optional<TCPMessage>>;
+};
+
+class TCPOverIPv4OverTunFdAdapter
+{
+	// ...
+}
+
+// 保证类的实现
+static_assert( TCPDatagramAdapter<TCPOverIPv4OverTunFdAdapter> );
+```
+
 - 模版类成员函数实现
 	- 使用impl.h, include模版类声明, 在impl.h中实现成员函数
 ## C++语言语法

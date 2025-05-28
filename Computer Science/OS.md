@@ -1,3 +1,5 @@
+**一切都是状态机(everything is a state machine)**
+
 https://jyywiki.cn/OS/2024/
 #### 并发
 - 操作系统的应用程序是状态机, 运算是状态机状态转移(除了syscall)
