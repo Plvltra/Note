@@ -245,3 +245,6 @@ Visual Studio Code还有许多自定义设置，丰富的插件帮助开发，�
 ```
 
 更多关于VS Code开发python的内容可以参考VS Code官方文档说明[Editing Python in Visual Studio Code](https://code.visualstudio.com/docs/python/editing)
+
+#### 好用的插件
+- gitlens

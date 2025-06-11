@@ -114,6 +114,7 @@ debugpy_unreal.start()
 
 #### 知识点
 - 项目Saved\Config\Windows\EditorPerProjectUserSettings.ini: 存储了用户自定义的界面配置
+- [How To Package And Sell Binary Plugins](https://store.algosyntax.com/tutorials/unreal-engine/how-to-package-and-sell-binary-plugins-for-ue5/?srsltid=AfmBOoqAKdCQFWnIiq25lG7i9TqXtWpo9dZqQOuBACIt8VDHlKDd4NTY)
 
 #### 小技巧
 - 主要的回调在FEditorDelegates

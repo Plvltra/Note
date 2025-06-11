@@ -182,6 +182,7 @@ val.dereference()
 
 #### emacs gdb
 - .emacs配置
+
 ```lisp
 (defun set-gdb-layout(&optional c-buffer)
   (if (not c-buffer)
@@ -281,9 +282,8 @@ val.dereference()
 
 (global-set-key (kbd "<mouse-4>") 'alternating-scroll-down-line)
 (global-set-key (kbd "<mouse-5>") 'alternating-scroll-up-line)
-
-
 ```
+
 - 命令行emacs进入图形emacs模式, M-x键后输入gdb, 选择要调试的文件(需要gcc -g生成调试用符号)
 - 使用GDB-Frames Disassembly打开额外的反汇编窗口
 
