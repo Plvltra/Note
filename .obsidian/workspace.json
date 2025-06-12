@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc/Quotes.md",
+                "file": "Computer Science/软件使用/Gitlab.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Quotes"
+              "title": "Gitlab"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/Quotes.md",
+                "file": "Computer Science/Lisp/Land of Lisp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Quotes"
+              "title": "Backlinks for Land of Lisp"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Misc/Quotes.md",
+                "file": "Computer Science/Lisp/Land of Lisp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Quotes"
+              "title": "Outgoing links from Land of Lisp"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Misc/Quotes.md",
+                "file": "Computer Science/Lisp/Land of Lisp.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Quotes"
+              "title": "Outline of Land of Lisp"
             }
           },
           {
@@ -193,11 +193,24 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "3a18ffda6ebbc069",
+  "active": "7e40ad5c90872636",
   "lastOpenFiles": [
+    "读过的书/Effective Modern C++ zh.pdf",
+    "读过的书/Land of Lisp.pdf",
+    "读过的书/common-lisp-cookbook.pdf",
+    "读过的书/黑客与画家（中文版）.pdf",
+    "Computer Science/软件使用/Gitlab.md",
+    "Computer Science/软件使用/attachments/9359b8f975b85d8d6c2fa02601ee975d_MD5.jpeg",
+    "Computer Science/软件使用/attachments/Pasted image 20250612142136.png",
+    "Computer Science/软件使用/attachments/c3c729b5153990ac14d36d18644b61e2_MD5.jpeg",
+    "Computer Science/软件使用/attachments/Pasted image 20250612141803.png",
+    "Computer Science/软件使用/attachments",
+    "Computer Science/Git.md",
+    "Computer Science/GCC.md",
+    "Computer Science/Lisp/Land of Lisp.md",
+    "Misc/Quotes.md",
     "Misc/启发性的文字.md",
     "Misc/收藏.md",
-    "Computer Science/Lisp/Land of Lisp.md",
     "Computer Science/VSCode.md",
     "Computer Science/Network/CS144.md",
     "Computer Science/Network/attachments/7dd64d74b3a6fc6ece01c5d791c960dc_MD5.jpeg",
@@ -206,10 +219,6 @@
     "Computer Science/Network/attachments/Pasted image 20250611160750.png",
     "Computer Science/Network/attachments/5bceec701b2c6e93d83d5ca4b9bf4143_MD5.jpeg",
     "Computer Science/Network/attachments/Pasted image 20250611160623.png",
-    "Computer Science/Network/attachments/3f35933eb227806cf3d6fb1b685a6f9c_MD5.jpeg",
-    "Computer Science/Network/attachments/Pasted image 20250611143123.png",
-    "Computer Science/Network/attachments/123607c543b1d9f023090962df2d13e8_MD5.jpeg",
-    "Computer Science/Network/attachments/Pasted image 20250611143049.png",
     "Computer Science/Network/TUN TAP设备.md",
     "Computer Science/attachments",
     "Computer Science/Lisp/Lisp.md",
@@ -223,23 +232,15 @@
     "Computer Science/Unreal/Unreal.md",
     "Computer Science/Unreal/attachments",
     "Computer Science/Unreal/反射系统.md",
-    "Computer Science/软件使用/Gitlab.md",
     "TODO任务列表.md",
     "Computer Science/GDB.md",
     "Misc/TODO.md",
     "Daily/模版.md",
     "Computer Science/temp/temp.md",
     "Computer Science/temp/attachments",
-    "Computer Science/temp",
     "Computer Science/Pangu PCG Skybox MS2 Deliverable Instruction Manual.md",
-    "Misc/Quotes.md",
-    "Misc/attachments",
     "Computer Science/Misc/好代码收藏.md",
-    "Computer Science/Network/attachments",
     "Computer Science/C++.md",
-    "Computer Science/Network",
-    "Computer Science/OS.md",
-    "Computer Science/软件使用/Perforce.md",
     "Untitled.canvas",
     "Program/Git/Untitled.canvas"
   ]

@@ -51,13 +51,15 @@
 	- eql: 在eq的基础上附带比较numbers和characters
 	- equalp: 在equal基础上加了一些特殊情况的处理(例如: 可以判等不同大小写的string, 整数与浮点数)
 	- 其他的比较: 在equal基础上增加了对特殊数据类型处理(例如: =(equal sign) 支持numbers的处理)
+
 #### 5: Building a Text Game Engine
 - *Using lists and symbols as an intermediary for manipulating text* is an old-school Lisp technique. However, it can often lead to very elegant code, since list operations are so fundamental to Lisp
+- 可以使用 `association list (alist)`存储键值对关联节点, 使用`assoc`根据key查询
 - `quasiquoting`特性: allows us to create chunks of data that have small pieces of Lisp code embedded in them.
 	```lisp
 	`(there is a ,(caddr edge) going ,(cadr edge) from here.)
 	```
-- `higher-order functions`: 
+- `higher-order functions`:  common-lisp使用#'传递函数
 	```lisp
 	> (mapcar #'car '((foo bar) (baz qux)))
 	(foo baz)
@@ -66,3 +68,4 @@
 	> (mapcar (function car) '((foo bar) (baz qux)))
 	(foo baz)
 	```
+- `predicates`函数命名规则:  When a function returns nil or a truth value, it’s a Common Lisp convention to append a p to the end of that function’s name.(例如oddp)
