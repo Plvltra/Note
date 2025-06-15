@@ -69,3 +69,164 @@
 	(foo baz)
 	```
 - `predicates`函数命名规则:  When a function returns nil or a truth value, it’s a Common Lisp convention to append a p to the end of that function’s name.(例如oddp)
+- 替换alist value的技巧:  *push* new items onto the list, only the most recent value will be reported by the *assoc* function
+``` lisp
+;BUILDING A TEXT GAME ENGINE
+
+;;;;;; Describing the Scenery with an Association List
+(defparameter *nodes* '((living-room (you are in the living-room. a wizard is snoring loudly on the couch.))
+                        (garden (you are in a beautiful garden. there is a well in front of you.))
+                        (attic (you are in the attic. there is a giant welding torch in the))))
+
+;;;;;; Describing the Location
+(defun describe-location (location nodes)
+  (cadr (assoc location nodes)))
+; (describe-location 'living-room *nodes*)
+; (YOU ARE IN THE LIVING-ROOM. A WIZARD IS SNORING LOUDLY ON THE COUCH.)
+
+;;;;;; Describing the Paths
+(defparameter *edges* '((living-room (garden west door)
+                                     (attic upstairs ladder))
+                        (garden (living-room east door))
+                        (attic (living-room downstairs ladder))))
+(defun describe-path (edge)
+  `(there is a ,(caddr edge) going ,(cadr edge) from here.))
+; (describe-path '(garden west door))
+; (THERE IS A DOOR GOING WEST FROM HERE.)
+
+; Describing Multiple Paths at Once
+(defun describe-paths (location edges)
+  (apply #'append (mapcar #'describe-path (cdr (assoc location edges)))))
+; (describe-paths 'living-room *edges*)
+; (THERE IS A DOOR GOING WEST FROM HERE. THERE IS A LADDER GOING UPSTAIRS FROM HERE.)
+
+;;;;;; Describing Objects at a Specific Location
+; Listing Visible Objects
+(defparameter *objects* '(whiskey bucket frog chain))
+(defparameter *object-locations* '((whiskey living-room)
+                                   (bucket living-room)
+                                   (chain garden)
+                                   (frog garden)))
+
+(defun objects-at (loc objs obj-locs)
+  (labels ((at-loc-p (obj)
+                     (eq (cadr (assoc obj obj-locs)) loc)))
+    (remove-if-not #'at-loc-p objs)))
+(objects-at 'living-room *objects* *object-locations*)
+; (WHISKEY BUCKET)
+
+; Describing Visible Objects
+(defun describe-objects (loc objs obj-locs)
+  (labels ((describe-obj (obj)
+                         `(you see a ,obj on the floor.)))
+    (apply #'append (mapcar #'describe-obj (objects-at loc objs obj-locs)))))
+; (describe-objects 'living-room *objects* *object-locations*)
+; (YOU SEE A WHISKEY ON THE FLOOR. YOU SEE A BUCKET ON THE FLOOR.)
+
+;;;;;; Describing It All
+(defparameter *location* 'living-room)
+
+(defun look ()
+  (append (describe-location *location* *nodes*)
+    (describe-paths *location* *edges*)
+    (describe-objects *location* *objects* *object-locations*)))
+
+;;;;;; Walking Around in Our World
+(defun walk (direction)
+  (let ((next (find direction
+                  (cdr (assoc *location* *edges*))
+                :key #'cadr)))
+    (if next
+        (progn (setf *location* (car next))
+               (look))
+        '(you cannot got that way.))))
+; (walk 'west)
+
+;;;;;; Picking Up Objects
+(defun pickup (object)
+  (cond ((member object (objects-at *location* *objects* *object-locations*))
+          (push (list object 'body) *object-locations*)
+          `(you are now carrying the ,object))
+        (t '(you cannot get that.))))
+; (pickup 'whiskey)
+
+;;;;;; Checking Our Inventory
+(defun inventory ()
+  (cons 'items- (objects-at 'body *objects* *object-locations*)))
+; (inventory)
+
+```
+
+#### 6: Reading and Printing in Lisp
+- print(prin1是print的简洁版本, 没有换行和结尾的空格): 输出内容需要quote符号括起
+- read: 输入内容需要quote符号括起
+- ![[Computer Science/Lisp/attachments/2ff8bc01ce3d47c783b03ebc57fced2b_MD5.jpeg]]
+- princ: 以适合人类读的方式输出
+	```lisp
+	; print vs princ
+	(print '3) => 3         An integer
+	(print '3.4) => 3.4     A float
+	(print 'foo) => FOO     A symbol 
+	(print '"foo") => "foo" A string
+	(print '#\a) => #\a     A character
+
+	(princ '3) => 3
+	(princ '3.4) => 3.4
+	(princ 'foo) => FOO
+	(princ '"foo") => foo
+	(princ '#\a) => a
+	```
+- character表示方式: #\开头, 例如#\a #\newline  #\tab #\space
+- *homoiconic*: a programming language that uses the same date structures to store data and program code
+- *quote*: 'foo 是 (quote foo) 的缩写,  意味着(list 'quote x)可以产生(quote x), 也就是'x
+- coerce
+```lisp
+;;;;;; game-repl
+(defun game-read ()
+  (let ((cmd (read-from-string
+               (concatenate 'string "(" (read-line) ")"))))
+    (flet ((quote-it (x)
+                     (list 'quote x)))
+      (cons (car cmd) (mapcar #'quote-it (cdr cmd))))))
+; (game-read)
+; walk east
+; (WALK 'EAST)
+
+(defparameter *allowed-commands* '(look walk pickup inventory))
+(defun game-eval (sexp)
+  (if (member (car sexp) *allowed-commands*)
+      (eval sexp)
+      '(i do not konw that command.)))
+
+(defun tweak-text (lst caps lit)
+  (when lst
+        (let ((item (car lst))
+              (rest (cdr lst)))
+          (cond ((eq item #\space) (cons item (tweak-text rest caps lit)))
+                ((member item '(#\! #\? #\.)) (cons item (tweak-text rest t lit)))
+                ((eq item #\") (tweak-text rest caps (not lit)))
+                (lit (cons item (tweak-text rest nil lit)))
+                ((or caps) (cons (char-upcase item) (tweak-text rest nil lit)))
+                (t (cons (char-downcase item) (tweak-text rest nil nil)))))))
+(defun game-print (lst)
+  (princ (coerce (tweak-text (coerce (string-trim "() "
+                                                  (prin1-to-string lst))
+                                     'list)
+                             t
+                             nil)
+                 'string))
+  (fresh-line))
+; (game-print '(not only does this sentence have a "comma," it also mentions the "iPad."))
+; Not only does this sentence have a comma, it also mentions the iPad.
+
+(defun game-repl ()
+  (let ((cmd (game-read)))
+    (unless (eq (car cmd) 'quit)
+      (game-print (game-eval cmd))
+      (game-repl))))
+
+```
+
+#### 6.5: Lambda
+- lambda: 是一个macro, macro允许参数不被立即求值
+- *higher-order functional programming*: Many functions in Lisp accept functions as parameters. If you use these functions, you are using a technique called higher-order functional programming.

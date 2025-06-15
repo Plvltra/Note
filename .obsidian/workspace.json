@@ -4,21 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "a5a4f059ce0cdf85",
+        "id": "54505bb5f6bf9d65",
         "type": "tabs",
         "children": [
           {
-            "id": "7e40ad5c90872636",
+            "id": "db671c370584b06e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Computer Science/软件使用/Gitlab.md",
-                "mode": "source",
-                "source": true
+                "file": "Computer Science/Lisp/attachments/2ff8bc01ce3d47c783b03ebc57fced2b_MD5.jpeg"
               },
-              "icon": "lucide-file",
-              "title": "Gitlab"
+              "icon": "lucide-image",
+              "title": "2ff8bc01ce3d47c783b03ebc57fced2b_MD5"
             }
           }
         ]
@@ -78,7 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 268.5
   },
   "right": {
     "id": "c037d93fc95b0575",
@@ -94,7 +92,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Computer Science/Lisp/Land of Lisp.md",
+                "file": "Computer Science/Lisp/attachments/2ff8bc01ce3d47c783b03ebc57fced2b_MD5.jpeg",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +102,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Land of Lisp"
+              "title": "Backlinks for 2ff8bc01ce3d47c783b03ebc57fced2b_MD5"
             }
           },
           {
@@ -113,12 +111,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Computer Science/Lisp/Land of Lisp.md",
+                "file": "Computer Science/Lisp/attachments/2ff8bc01ce3d47c783b03ebc57fced2b_MD5.jpeg",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Land of Lisp"
+              "title": "Outgoing links from 2ff8bc01ce3d47c783b03ebc57fced2b_MD5"
             }
           },
           {
@@ -129,7 +127,7 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true,
-                "showSearch": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
@@ -142,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Computer Science/Lisp/Land of Lisp.md",
+                "file": "Computer Science/Lisp/attachments/2ff8bc01ce3d47c783b03ebc57fced2b_MD5.jpeg",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Land of Lisp"
+              "title": "Outline of 2ff8bc01ce3d47c783b03ebc57fced2b_MD5"
             }
           },
           {
@@ -193,13 +191,21 @@
       "obsidian-local-images-plus:Local Images Plus  0.16.3\r\nLocalize attachments (plugin folder)": false
     }
   },
-  "active": "7e40ad5c90872636",
+  "active": "3a18ffda6ebbc069",
   "lastOpenFiles": [
-    "读过的书/Effective Modern C++ zh.pdf",
+    "Computer Science/Lisp/Land of Lisp.md",
+    "Computer Science/Lisp/attachments/2ff8bc01ce3d47c783b03ebc57fced2b_MD5.jpeg",
     "读过的书/Land of Lisp.pdf",
+    "Computer Science/Lisp/attachments/Pasted image 20250615234925.png",
+    "读过的书/da5718a573294ca2b9e912ae56107709/a8a8ceaf4203433c859b5516ca011dc9.pdf",
+    "读过的书/da5718a573294ca2b9e912ae56107709/bef558d972fb489baf3ac758f124fdf2.pdf",
+    "读过的书/da5718a573294ca2b9e912ae56107709",
+    "Computer Science/Lisp/attachments",
+    "Computer Science/Lisp/Lisp.md",
     "读过的书/common-lisp-cookbook.pdf",
-    "读过的书/黑客与画家（中文版）.pdf",
     "Computer Science/软件使用/Gitlab.md",
+    "读过的书/Effective Modern C++ zh.pdf",
+    "读过的书/黑客与画家（中文版）.pdf",
     "Computer Science/软件使用/attachments/9359b8f975b85d8d6c2fa02601ee975d_MD5.jpeg",
     "Computer Science/软件使用/attachments/Pasted image 20250612142136.png",
     "Computer Science/软件使用/attachments/c3c729b5153990ac14d36d18644b61e2_MD5.jpeg",
@@ -207,7 +213,6 @@
     "Computer Science/软件使用/attachments",
     "Computer Science/Git.md",
     "Computer Science/GCC.md",
-    "Computer Science/Lisp/Land of Lisp.md",
     "Misc/Quotes.md",
     "Misc/启发性的文字.md",
     "Misc/收藏.md",
@@ -217,27 +222,19 @@
     "Computer Science/Network/attachments/Pasted image 20250611161506.png",
     "Computer Science/Network/attachments/499932f4fde859abb77af2980694cea3_MD5.jpeg",
     "Computer Science/Network/attachments/Pasted image 20250611160750.png",
-    "Computer Science/Network/attachments/5bceec701b2c6e93d83d5ca4b9bf4143_MD5.jpeg",
-    "Computer Science/Network/attachments/Pasted image 20250611160623.png",
     "Computer Science/Network/TUN TAP设备.md",
     "Computer Science/attachments",
-    "Computer Science/Lisp/Lisp.md",
     "读书笔记/黑客与画家.md",
-    "Computer Science/Lisp/attachments",
-    "Computer Science/Lisp",
     "Daily/2025-05/2025-05-09.md",
     "Daily/2025-05/2025-05-12.md",
     "健身/健身.md",
-    "健身/attachments",
     "Computer Science/Unreal/Unreal.md",
-    "Computer Science/Unreal/attachments",
     "Computer Science/Unreal/反射系统.md",
     "TODO任务列表.md",
     "Computer Science/GDB.md",
     "Misc/TODO.md",
     "Daily/模版.md",
     "Computer Science/temp/temp.md",
-    "Computer Science/temp/attachments",
     "Computer Science/Pangu PCG Skybox MS2 Deliverable Instruction Manual.md",
     "Computer Science/Misc/好代码收藏.md",
     "Computer Science/C++.md",
